@@ -1,0 +1,23 @@
+@mixin product-name-typo {
+    font-size: 48px;
+}
+
+@mixin product-price-typo {
+    font-size: 40px;
+}
+
+@mixin product-info-typo {
+    font-size: toRem(20);
+
+    @media only screen and (min-width: 1024px) {
+        font-size: toRem(16);
+    }
+}
+
+@mixin product-cart-typo {
+    font-size: toRem(20);
+
+    @media only screen and (min-width: 1024px) {
+        font-size: toRem(16);
+    }
+}

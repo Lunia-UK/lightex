@@ -1,0 +1,34 @@
+$tokens: (
+  "light": (
+    "body-bg": #fffadf,
+    "container-light": #6b7dd4,
+    "container-dark": #4052ad,
+    "background": #4052ad,
+    "alert": #ff6857,
+    "icon-primary": #000000,
+    "icon-secondary": #ffffff,
+    "text-header": #000000,
+    "text-primary": #ffffff,
+    "text-secondary": #000000,
+  ),
+  "dark": (
+    "body-bg": #242424,
+    "container-light": #6b7dd4,
+    "container-dark": #4052ad,
+    "background": #4052ad,
+    "alert": #ff6857,
+    "icon-primary": #ffffff,
+    "icon-secondary": #ffffff,
+    "text-header": #ffffff,
+    "text-primary": #ffffff,
+    "text-secondary": #ffffff,
+  )
+);
+
+:root {
+    --bg-container-noise: 'url("data:image/svg+xml,%3Csvg class=\'icon-svg icon-svg--bolt\' viewBox=\'0 0 960 540\' width=\'960\' height=\'540\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cdefs%3E%3ClinearGradient id=\'grad1\' x1=\'0%25\' y1=\'0%25\' x2=\'100%25\' y2=\'0%25\'%3E%3Cstop offset=\'0%25\' style=\'stop-color:%236B7CD3;stop-opacity:1\' /%3E%3Cstop offset=\'100%25\' style=\'stop-color:%234153AD;stop-opacity:1\' /%3E%3C/linearGradient%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'10\' result=\'noisy\' /%3E%3CfeColorMatrix type=\'saturate\' values=\'0\'/%3E%3CfeBlend in=\'SourceGraphic\' in2=\'noisy\' mode=\'multiply\' /%3E%3C/filter%3E%3C/defs%3E%3Cg%3E%3Crect fill=\'url(%23grad1)\' filter=\'url(%23noise)\' width=\'1920\' height=\'1080\' /%3E%3C/g%3E%3C/svg%3E/"))';
+
+    --transition-scale: 0.3s cubic-bezier(.08,.71,.84,.77);
+}
+
+

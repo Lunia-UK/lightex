@@ -1,0 +1,71 @@
+.header {
+    grid-area: header;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        padding-block: 1rem;
+    }
+
+    // Name
+    // __________________________________
+    &__name {
+        text-decoration: none;
+        color: get-color(text-secondary);
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    // Icons 
+    // __________________________________
+    &__icons {
+        display: flex;
+    }
+    
+    &__icon-search {
+        display: block;
+        width: 26px;
+        height: 26px;
+        @include get-svg-mask(search, icon-primary);
+        margin: 0 0.5rem;
+    }
+
+    &__icon-basket {
+        display: block;
+        width: 26px;
+        height: 26px;
+        @include get-svg-mask(cart, icon-primary);
+        margin: 0 0.5rem;
+    }
+
+    // Menu list 
+    // __________________________________
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        position: relative;
+        color: get-color(text-header);
+        margin-inline: 1rem;
+        font-size: 18px;
+        cursor: pointer;
+
+        &--active {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+    
+            // Underline
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: -8px;
+                height: 2px;
+                width: 100%;
+                background-color: get-color(text-secondary);
+            }
+        }
+    }    
+}

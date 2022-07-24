@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <title>My First Parcel App</title>
+    <link rel="stylesheet" href="/index.49c9a8a6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600;2,800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="body-wrapper">
+      <header class="header">
+        <nav class="header__nav">
+          <a class="header__name" href="">LIGHTEX</a>
+          <ul class="header__items">
+            <li class="header__item header__item--active">Catalog</li>
+            <li class="header__item">About</li>
+          </ul>
+          <div class="header__icons">
+            <a class="header__icon-search" href=""></a>
+            <a class="header__icon-basket" href=""></a>
+          </div>
+        </nav>
+      </header>
+      <div class="body-wrapper__img">
+        <img class="body-wrapper__lamp" src="/lamp2.de298759.png" alt="">
+        <div class="body-wrapper__360deg"></div>
+      </div>
+      <section class="product">
+        <article class="product-description">
+          <div class="product__content">
+            <p class="product__path">HOME / LAMP / HAVEN</p>
+            <h1 class="product__name">NEW HAVEN</h1>
+            <p class="product__price">148<sup>$</sup></p>
+            <ul class="product__info">
+              <li class="product__info-item">Fact<span></span></li>
+              <li class="product__info-item">About the brand<span></span></li>
+              <li class="product__info-item">Product information<span></span></li>
+              <li class="product__info-item">Colors<span></span></li>
+            </ul>
+          </div>
+
+          <a class="product__like" href=""></a>
+          <div class="product__cart">
+            <button class="product__remove">-</button>
+            <p class="product__count">2</p>
+            <button class="product__add">+</button>
+            <button class="product__add-to-cart">Add to card</button>
+          </div>
+        </article>
+        <aside class="product-navigation">
+          <nav class="product-navigation__nav">
+            <a class="product-navigation__prev" href=""></a>
+            <ul class="product-navigation__items">
+              <li class="product-navigation__item">
+                <img class="product-navigation__image" src="/lamp.c1d7a5b0.png" alt="">
+                <p class="product-navigation__name">New havel</p>
+              </li>
+              <li class="product-navigation__item">
+                <img class="product-navigation__image" src="/lamp.c1d7a5b0.png" alt="">
+                <p class="product-navigation__name">Old capital</p>
+              </li>
+              <li class="product-navigation__item product-navigation__item--active">
+                <img class="product-navigation__image" src="/lamp.c1d7a5b0.png" alt="">
+                <p class="product-navigation__name">New Disk lamp</p>
+              </li>
+              <li class="product-navigation__item">
+                <img class="product-navigation__image" src="/lamp.c1d7a5b0.png" alt="">
+                <p class="product-navigation__name">Human lamp</p>
+              </li>
+              <li class="product-navigation__item">
+                <img class="product-navigation__image" src="/lamp.c1d7a5b0.png" alt="">
+                <p class="product-navigation__name">Medium lamp</p>
+              </li>
+            </ul>
+            <a class="product-navigation__next" href=""></a>
+          </nav>
+        </aside>
+      </section>
+      <nav class="category-navigation">
+        <ul class="category-navigation__items">
+          <a class="category-navigation__link category-navigation__link--active" href=""><li class="category-navigation__item category-navigation__category-1"></li></a>
+          <a class="category-navigation__link" href=""><li class="category-navigation__item category-navigation__category-2"></li></a>
+          <a class="category-navigation__link" href=""><li class="category-navigation__item category-navigation__category-3"></li></a>
+          <a class="category-navigation__link" href=""><li class="category-navigation__item category-navigation__category-4"></li></a>
+          <a class="category-navigation__link" href=""><li class="category-navigation__item category-navigation__category-5"></li></a>
+        </ul>
+        <a class="category-navigation__link-more" href=""></a>
+      </nav>
+    </section>
+  </body>
+
+  <script>const lamp = document.querySelector(".body-wrapper__lamp");
+const html = document.querySelector("html");
+let theme = true;
+lamp.addEventListener("click", ()=>{
+    theme = !theme;
+    if (!theme) html.setAttribute("data-theme", "dark");
+    else html.setAttribute("data-theme", "light");
+});
+
+</script>
+</html>
