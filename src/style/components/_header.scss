@@ -22,11 +22,11 @@
         display: flex;
     }
     
-    &__icon-search {
+    &__icon-github {
         display: block;
         width: 26px;
         height: 26px;
-        @include get-svg-mask(search, icon-primary);
+        @include get-svg-mask(github, icon-primary);
         margin: 0 0.5rem;
     }
 
